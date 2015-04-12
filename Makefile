@@ -73,11 +73,11 @@ lib: $(LIB_DIRS)
 install: lib
 	@printf "  INSTALL headers\n"
 	$(Q)$(INSTALL) -d $(INCDIR)/libopencm3
-	$(Q)$(INSTALL) -d $(INCDIR)/libopencmsis
+	$(Q)$(INSTALL) -d $(INCDIR)/librecmsis
 	$(Q)$(INSTALL) -d $(LIBDIR)
 	$(Q)$(INSTALL) -d $(SHAREDIR)
 	$(Q)cp -r include/libopencm3/* $(INCDIR)/libopencm3
-	$(Q)cp -r include/libopencmsis/* $(INCDIR)/libopencmsis
+	$(Q)cp -r include/librecmsis/* $(INCDIR)/librecmsis
 	@printf "  INSTALL libs\n"
 	$(Q)$(INSTALL) -m 0644 lib/*.a $(LIBDIR)
 	@printf "  INSTALL ldscripts\n"
