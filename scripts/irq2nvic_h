@@ -166,9 +166,9 @@ def main():
 
     makeparentdir(nvic_h)
     makeparentdir(vector_nvic_c)
-#    /*makeparentdir(cmsis)
-#
-#    convert(open(infile), open(nvic_h, 'w'), open(vector_nvic_c, 'w'), open(cmsis, 'w'))*/
+    makeparentdir(cmsis)
+
+    convert(open(infile), open(nvic_h, 'w'), open(vector_nvic_c, 'w'), open(cmsis, 'w'))
 
 if __name__ == "__main__":
     main()

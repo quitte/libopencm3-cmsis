@@ -33,7 +33,7 @@ CFLAGS		= -Os -g \
 		  -ffunction-sections -fdata-sections -MD -DLM3S
 # ARFLAGS	= rcsv
 ARFLAGS		= rcs
-OBJS		= gpio.o assert.o
+OBJS		= gpio.o vector.o assert.o
 
 VPATH += ../cm3
 
